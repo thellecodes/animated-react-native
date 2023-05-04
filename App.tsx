@@ -37,6 +37,7 @@ const AppNavigator = () => (
         title: "Philiz Coffee",
       }}
     /> */}
+
     {/* <Stack.Screen
       name="LiquidSwipe"
       component={LiquidSwipe}
