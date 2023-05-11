@@ -7,6 +7,8 @@ import LiquidSwipe from "./projects/liquidswipe/LiquidSwipe/LiquidSwipe";
 import { LoadAssets } from "./components";
 import PhilzCoffee from "./projects/PhilzCoffee/PhilzCoffee";
 import Chrome from "./projects/Chrome/Chrome";
+import JellyScroll from "./projects/JellyScroll/JellyScroll";
+import ColorSelection from "./projects/Reflectly/ColorSelection";
 
 const fonts = {
   "SFProDisplay-Bold": require("./assets/fonts/SFPro/SF-Pro-Display-Bold.otf"),
@@ -22,13 +24,13 @@ const assets: number[] = [];
 const Stack = createStackNavigator<Routes>();
 const AppNavigator = () => (
   <Stack.Navigator>
-    <Stack.Screen
+    {/* <Stack.Screen
       name="Chrome"
       component={Chrome}
       options={{
         title: "Chrome Drag n Drop",
       }}
-    />
+    /> */}
 
     {/* <Stack.Screen
       name="PhilzCoffee"
@@ -37,6 +39,22 @@ const AppNavigator = () => (
         title: "Philiz Coffee",
       }}
     /> */}
+
+    {/* <Stack.Screen
+      name="JellyScroll"
+      component={JellyScroll}
+      options={{
+        title: "JellyScroll",
+      }}
+    /> */}
+
+    <Stack.Screen
+      name="ColorSelection"
+      component={ColorSelection}
+      options={{
+        title: "ColorSelection",
+      }}
+    />
 
     {/* <Stack.Screen
       name="LiquidSwipe"
